@@ -1,3 +1,6 @@
+// create all the user queries and export them  
+// $1 $2 $3 are parameters
+//
 const getUsers = 'SELECT * FROM users ORDER BY id ASC';
 const createUser = 'INSERT INTO users (location, alias, email) VALUES ($1, $2, $3)';
 const getUserById = 'SELECT * FROM users WHERE id = $1';
@@ -12,4 +15,5 @@ module.exports = {
     updateUser,
     deleteUser,
     getUserByEmail
+    
 }

@@ -1,3 +1,4 @@
+// connect  to the database
 const Pool = require('pg').Pool
 
 const pool = new Pool({
@@ -8,4 +9,5 @@ const pool = new Pool({
   port: 5432,
 });
 
+// export the pool
 module.exports = pool;
