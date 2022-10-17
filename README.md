@@ -26,71 +26,24 @@ The entire application is contained within the `server.js` file & `source` folde
 
     npm run serve
 
-# REST API
+## REST API
 
 The REST API to the users app is described below.
 
-
-## GET - Get Users
+### GET - Get Users
 GET localhost:3000/api/v1/users
 
-###  Fetch all users
-
-### Example Request
-curl --location --request GET 'localhost:3000/api/v1/users'
-
-## GET - Get User By ID
+### GET - Get User By ID
 GET localhost:3000/api/v1/users/1
 
-### Get a specific user by ID
-
-
-### Example Request
-curl --location --request GET 'localhost:3000/api/v1/users/1'
-
-##  Delete User
+### Delete User
 DELETE - localhost:3000/api/v1/users/2
-### Delete a User by ID
 
-## Example Request
-curl --location --request DELETE 'localhost:3000/api/v1/users/2'
-
-## Update User
+### Update User
 PUT - localhost:3000/api/v1/users/1
 
-### Update a specific User
-
-### Example Request
-
-HEADERS
-    Content-Type
-    application/json
-
-curl --location --request PUT 'localhost:3000/api/v1/users/1' \
-    --header 'Content-Type: application/json' \
-    --data-raw '{
-        "id": 1,
-        "location": "Bayview",
-        "alias": "MM",
-        "email": "maria@awesome.com"
-    }'
-
-## Create User
+### Create User
 POST - localhost:3000/api/v1/users
 
-### Create a User
 
-### Example Request
-HEADERS
-    Content-Type
-    application/json
-
-curl --location --request PUT 'localhost:3000/api/v1/users/1' \
-    --header 'Content-Type: application/json' \
-    --data-raw '{
-        "id": 1,
-        "location": "Bayview",
-        "alias": "MM",
-        "email": "maria@awesome.com"
-    }'
 
