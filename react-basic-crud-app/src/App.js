@@ -6,6 +6,10 @@ import React, { Component } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 // import react-bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
+// import users from user component
+import User from "./components/user.component";
+// import user-list from user-list component
+import UsersList from "./components/users-list.component";
 
 function App() {
   return (

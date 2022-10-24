@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+/* add styling to the form */
+.form-group {
+  margin-bottom: 10px;
+}
+
+.circular.labels {
+  margin-right: 5px;
+}
+
+.pull-right {
+  float: right;
+}
+/* add styling to the modal */
+.modal {
+  height: auto !important;
+  top: auto;
+  left: auto;
+  bottom: auto;
+  right: auto;
+}
+
+.delete-modal {
+  margin: 10px !important;
+}
