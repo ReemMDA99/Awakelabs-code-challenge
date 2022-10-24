@@ -1,11 +1,9 @@
-
 // import routes and components
 import React, { Component } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 // import app.css and react-bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
-
 // import user component
 import User from "./components/user.component";
 // import user-list from user-list component
@@ -13,7 +11,7 @@ import UsersList from "./components/user-list.component";
 // import add-user component
 import AddUser from "./components/add-user.component";
 
-
+// render App
 class App extends Component {
   render() {
     return (

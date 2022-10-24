@@ -15,7 +15,7 @@ class UserDataService {
         return _post(data, 'users')
     }
     update(id, data) {
-        // edit or update
+        // edit or update by user id
         return _put(data, `user/${id}`);
     }
     // delete user by Id
