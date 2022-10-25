@@ -72,7 +72,7 @@ export default function AddUser() {
         .catch((error) => {
           // If user creation is not successful, then show an error message
           setIsSubmitSuccessful(false);
-        // if error log erro
+        // if error log error
           console.log(error);
           setServerError(error.response.data);
           setTimeout(function () {
