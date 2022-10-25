@@ -8,7 +8,7 @@ var cors = require('cors')
 const app = express()
 const db = require('./db');
 
-// app listening on port #3000
+// app listening on port #3001
 const port = 3001
 
 app.use(bodyParser.json())
