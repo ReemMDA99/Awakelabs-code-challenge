@@ -3,14 +3,16 @@ const express = require('express');
 // import customer/user routes
 const userRoutes = require('./src/users/routes');
 const bodyParser = require('body-parser');
+var cors = require('cors')
 // create app 
 const app = express()
 const db = require('./db');
 
-// app listening on port #3000
-const port = 3000
+// app listening on port #3001
+const port = 3001
 
 app.use(bodyParser.json())
+app.use(cors()); //Note: Config just for development
 app.use(
   bodyParser.urlencoded({
     extended: true,
@@ -27,4 +29,4 @@ app.get('/', (request, response) => {
 }); 
 
 // use the route that leads to users path
-app.use('  ',userRoutes); 
+app.use('/api/v1/users',userRoutes); 
